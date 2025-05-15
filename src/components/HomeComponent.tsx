@@ -41,8 +41,11 @@ export const HomeComponent: React.FC = () => {
       <div className={styles.cardsWrapper} id="card-list">
         {cars.map(car => <CarCard key={car.id} car={car}/>)}
       </div>
-      <PaginationDesktop onClickLeft={() => onClickNavigate(true)} onClickRight={() => onClickNavigate(false)}/>
-      <PaginationMobile selected={selected} onClick={onClickMobile} total={cars.length}></PaginationMobile>
+      <div className={styles.paginationWrapper}>
+        <PaginationDesktop onClickLeft={() => onClickNavigate(true)} onClickRight={() => onClickNavigate(false)}/>
+        <PaginationMobile selected={selected} onClick={onClickMobile} total={cars.length}></PaginationMobile>
+      </div>
+
     </div>
   );
 };

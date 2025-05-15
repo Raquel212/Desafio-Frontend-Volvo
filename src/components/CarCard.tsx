@@ -11,12 +11,13 @@ interface CardProps {
 export function CarCard({ car } : CardProps){
     return(
         <div className={styles.cardWrapper}>
-            <Text variant="bates" subStyle="emphasis">{car?.bodyType}</Text>
+            <Text variant="bates" subStyle="emphasis" style={{ color: 'gray' }}>{car?.bodyType}</Text>
             <Flex extend={{
                 justifyContent: 'flex-start',
                 alignItems: 'center',
                 flexDirection: 'row',
-                margin: 0
+                margin: 0,
+                gap: '.625rem'
             }}>
                 <Text variant="amundsen" extend={{ margin: 0, padding: 0 }}>{car?.modelName}</Text>
                 <Text variant="bates" subStyle="inline-link" extend={{ margin: 0 }}>{car?.modelType}</Text>
@@ -27,13 +28,14 @@ export function CarCard({ car } : CardProps){
             <Flex extend={{
                 justifyContent: 'center',
                 alignItems: 'center',
-                flexDirection: 'row'
+                flexDirection: 'row',
+                gap: '1rem'
             }}>
                 <Link href="https://www.volvocars.com/" arrow="right">
-                    SHOP
+                    LEARN
                 </Link>
                 <Link href="https://www.volvocars.com/" arrow="right">
-                    LEARN
+                    SHOP
                 </Link>
             </Flex>
         </div>
