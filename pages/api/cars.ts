@@ -1,8 +1,7 @@
-// Aqui vai ser criado o endpoint para pegar os carros
-import { NextApiRequest, NextApiResponse } from 'next';
+import { NextApiRequest, NextApiResponse } from "next";
+
 import data from '../../public/api/cars.json';
 
-
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse){
     res.status(200).json(data);
 }

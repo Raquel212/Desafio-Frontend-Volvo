@@ -4,4 +4,4 @@ export interface Car {
     bodyType: string,
     modelType: string,
     imageUrl: string
-};
+}
