@@ -1,6 +1,7 @@
 # 🚗 Volvo Cars - Front-end Coding Test (React + Next.js)
 
 Este projeto é uma implementação do teste técnico de front-end proposto pela equipe da Volvo Cars (Global Online Digital). A proposta consiste em desenvolver uma interface web que exibe os carros da linha Recharge com base em um design fornecido para desktop e mobile.
+Segue o link do desafio: https://github.com/volvo-cars/god-frontend-code-test
 
 ### Explicação:
 Utilizei a biblioteca Axios para fazer a requisição HTTP ao endpoint /api/cars.json, carregando os dados dos carros dinamicamente no frontend, o Vercel, que é uma plataforma recomendada e compatível com Next.js, permitindo fácil deploy com CI/CD, foi utilizado para o deploy do projeto.
