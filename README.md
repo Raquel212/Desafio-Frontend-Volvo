@@ -1,51 +1,45 @@
-# Volvo Cars (Global Online Digital)
+# 🚗 Volvo Cars - Front-end Coding Test (React + Next.js)
 
-## Front-end coding test (React)
+Este projeto é uma implementação do teste técnico de front-end proposto pela equipe da Volvo Cars (Global Online Digital). A proposta consiste em desenvolver uma interface web que exibe os carros da linha Recharge com base em um design fornecido para desktop e mobile.
 
-Our team's designer has come up with a new design to show our latest and greatest recharge cars on the website.
+### Explicação:
+Utilizei a biblioteca Axios para fazer a requisição HTTP ao endpoint /api/cars.json, carregando os dados dos carros dinamicamente no frontend, o Vercel, que é uma plataforma recomendada e compatível com Next.js, permitindo fácil deploy com CI/CD, foi utilizado para o deploy do projeto.
 
-Here is how the design look like for desktop and mobile (files are stored under `docs` folder)
+### Tecnologias Utilizadas
 
-### Desktop
+- React com TypeScript
 
-![ProductListDesktop](./docs/ProductList-Desktop.png)
+- Next.js
 
-### Mobile
+- Axios para requisições HTTP
 
-![ProductListDesktop](./docs/ProductList-Mobile.png)
+- Vercel para deploy (ambiente de produção)
 
-The data required to render the design is under `public/api/cars.json` folder. You need to fetch the data and render it in the browser. The data looks like this:
+### 📦 Funcionalidades Implementadas
+- Requisição dos dados
+ - Utilizei o Axios para buscar os dados dos veículos a partir do arquivo public/api/cars.json.
 
-```json
-[
-  {
-    "id": "xc90-recharge",
-    "modelName": "XC90 Recharge",
-    "bodyType": "suv",
-    "modelType": "plug-in hybrid",
-    "imageUrl": "/images/xc90_recharge.jpg"
-  }
-]
-```
+- Renderização dinâmica da lista de veículos
+-- Cada item exibe:
 
-The product owner is telling you that you can generate the links to the learn and shop pages of each car by concatating the `id` of the car to the learn (`/learn/`) and shop (`/shop/`) urls.
+--- Modelo (modelName)
 
-Two extra SVG icons are also provided by our designer which are stored under `docs` folder.
+--- Tipo de carroceria (bodyType)
 
-## Requirements
+--- Tipo do modelo (modelType)
 
-- The project is bootstraped using [Next.js](https://nextjs.org/).
-- Browser support is modern ever-green browsers.
-- Implement this design using React and Typescript.
-- Accessibility is important.
-- Code Structure and reusablity is important.
+--- Imagem (imageUrl)
 
-## Bonus Points:
+--- Botões de ação Learn e Shop, com links dinâmicos baseados no id
 
-- If you use our design system component library, [VCC-UI](https://vcc-ui.vercel.app/)
-- If you add a filter bar on the top to filter cars by `bodyType`
+- Design responsivo (Desktop e Mobile)
+  - A interface foi implementada conforme os arquivos de design disponibilizados, adaptando-se bem a diferentes tamanhos de tela.
 
-## Submission
+- Componentização
+  - Dividi a aplicação em componentes reutilizáveis e organizados, com foco em manutenibilidade e clareza.
 
-Clone this repository to get started. Due to a number of reasons, not least privacy, you will be asked to zip your solution and mail it in, instead of submitting a pull-request. In order to maintain an unbiased reviewing process, please ensure to keep your name or other Personal Identifiable Information (PII) from the code.
+- Acessibilidade
+  - Apliquei boas práticas de acessibilidade (semântica, navegação por teclado, alt em imagens, etc).
+
+
 
