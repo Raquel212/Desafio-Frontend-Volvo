@@ -20,17 +20,12 @@ Utilizei a biblioteca Axios para fazer a requisição HTTP ao endpoint /api/cars
  - Utilizei o Axios para buscar os dados dos veículos a partir do arquivo public/api/cars.json.
 
 - Renderização dinâmica da lista de veículos
--- Cada item exibe:
-
---- Modelo (modelName)
-
---- Tipo de carroceria (bodyType)
-
---- Tipo do modelo (modelType)
-
---- Imagem (imageUrl)
-
---- Botões de ação Learn e Shop, com links dinâmicos baseados no id
+  - Cada item exibe:
+     - Modelo (modelName)
+     - Tipo de carroceria (bodyType)
+     - Tipo do modelo (modelType)
+     - Imagem (imageUrl)
+     - Botões de ação Learn e Shop, com links dinâmicos baseados no id
 
 - Design responsivo (Desktop e Mobile)
   - A interface foi implementada conforme os arquivos de design disponibilizados, adaptando-se bem a diferentes tamanhos de tela.
