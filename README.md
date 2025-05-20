@@ -17,7 +17,7 @@ Utilizei a biblioteca Axios para fazer a requisição HTTP ao endpoint /api/cars
 
 ### 📦 Funcionalidades Implementadas
 - Requisição dos dados
- - Utilizei o Axios para buscar os dados dos veículos a partir do arquivo public/api/cars.json.
+  - Utilizei o Axios para buscar os dados dos veículos a partir do arquivo public/api/cars.json.
 
 - Renderização dinâmica da lista de veículos
   - Cada item exibe:
